@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="46">
+  <Forms>
+    <CETrainer Class="TTrainerForm" Encoding="Ascii85">#Zyg:,AtV33B)CdrXy9Vx]PWKhG]eDn+]9HQV{UpyR1y_0oFJ,atvh-F#9;ebkl2e)M$9:HG#;LpGxg*y0Sn2eDC=aXQzZv:nq:eFqDLHkOLtT$LsH@.s}b7d^=xtfzIa2^E5s@EX*U@@oho5Zr(GOTt$kmz!O_a!LYvSE_n7eqT(h{gB)VJr/Ll22Dhn#/OA;{,HD2umI1aWX@#;nX4oSOMFqFcLy)e4O6tQT5mFIW@%w:NauStoopb0xN?qNz3HbidyhpX3SWXzY%jpy)#10.FkBJm.IUDrt:+AlJU?pGkm-%BqZ(zOVMC#]IEo_EtDc#V,wS?;G3BWyl3S?cYjXr]+H[Y+6@KG-$Y+_4;n7*MU)Cd%L1em:WFET_9v:h^Llj-;#/$9K]n0@Yj33G,kF;$gw)NNe^WDA*qb+7oGh@))?OzMzy5yBd/A5)=5!y#Owcul#oFs!?vPN%a0H.%ANgz5EDz..L]/BfHOei@LQUNbuY7APV$oTH}B.4=Kh)D}!RfsTkLn2.Dp%w.6H,1uKt!J4M7U?/}Y[=V:pNS*HoXq:^;Yh.YyKhZ8@Nzm?(THZCQ)XmzS1Gshu+Zq67atej:kuitO8)9wSp5:w^AG}Ov%/)t$FJ[p;X0-og#@p*x+*z._^rjIuetcciWcPQ[F8</CETrainer>
+  </Forms>
+  <CheatEntries>
+    <CheatEntry>
+      <ID>4</ID>
+      <Description>"player_life"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"THREADSTACK0"-00000984</Address>
+      <Offsets>
+        <Offset>408</Offset>
+        <Offset>70</Offset>
+        <Offset>0</Offset>
+        <Offset>0</Offset>
+        <Offset>2E8</Offset>
+        <Offset>4</Offset>
+        <Offset>32C</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>5</ID>
+      <Description>"pointerscan result"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"THREADSTACK0"-00000D98</Address>
+      <Offsets>
+        <Offset>408</Offset>
+        <Offset>64</Offset>
+        <Offset>110</Offset>
+        <Offset>4</Offset>
+        <Offset>8</Offset>
+        <Offset>4</Offset>
+        <Offset>C</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>6</ID>
+      <Description>"pointerscan result"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"THREADSTACK0"-00000D98</Address>
+      <Offsets>
+        <Offset>408</Offset>
+        <Offset>64</Offset>
+        <Offset>110</Offset>
+        <Offset>4</Offset>
+        <Offset>4</Offset>
+        <Offset>4</Offset>
+        <Offset>C</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>7</ID>
+      <Description>"pointerscan result"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"THREADSTACK0"-00000C84</Address>
+      <Offsets>
+        <Offset>408</Offset>
+        <Offset>64</Offset>
+        <Offset>110</Offset>
+        <Offset>4</Offset>
+        <Offset>8</Offset>
+        <Offset>4</Offset>
+        <Offset>C</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"pointerscan result"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"THREADSTACK0"-00000C84</Address>
+      <Offsets>
+        <Offset>408</Offset>
+        <Offset>64</Offset>
+        <Offset>110</Offset>
+        <Offset>4</Offset>
+        <Offset>4</Offset>
+        <Offset>4</Offset>
+        <Offset>C</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>16</ID>
+      <Description>"player_max_life"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"THREADSTACK0"-00000B64</Address>
+      <Offsets>
+        <Offset>400</Offset>
+        <Offset>88</Offset>
+        <Offset>14</Offset>
+        <Offset>10C</Offset>
+        <Offset>1C</Offset>
+        <Offset>4</Offset>
+        <Offset>C</Offset>
+      </Offsets>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>17</ID>
+      <Description>"pointerscan result"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>"THREADSTACK0"-00000B34</Address>
+      <Offsets>
+        <Offset>400</Offset>
+        <Offset>88</Offset>
+        <Offset>14</Offset>
+        <Offset>10C</Offset>
+        <Offset>1C</Offset>
+        <Offset>4</Offset>
+        <Offset>C</Offset>
+      </Offsets>
+    </CheatEntry>
+  </CheatEntries>
+  <UserdefinedSymbols/>
+  <LuaScript>local pid = getProcessIDFromProcessName("Terraria.exe")
+if pid then
+    openProcess(pid)
+end
+
+local CETrainer = createForm()
+CETrainer.Caption = "Terraria Immortal"
+CETrainer.BorderStyle = "bsDialog"
+CETrainer.Width = 400
+CETrainer.Height = 270
+
+local player_life = AddressList.getMemoryRecordByDescription("player_life")
+local player_max_life = AddressList.getMemoryRecordByDescription("player_max_life")
+
+local CELabel1 = createLabel(CETrainer)
+CELabel1.Caption = "Deixar vida em:"
+CELabel1.Left = 20
+CELabel1.Top = 20
+
+local CEEdit1 = createEdit(CETrainer)
+CEEdit1.TextHint = "ex: 999"
+CEEdit1.Text = player_life.Value
+CEEdit1.Left = 20
+CEEdit1.Top = 45
+CEEdit1.Width = 120
+
+local CEButton1 = createButton(CETrainer)
+CEButton1.Caption = "OK"
+CEButton1.Cursor = "crHandPoint"
+CEButton1.Left = 160
+CEButton1.Top = 42
+
+local CEButton1Lock = createButton(CETrainer)
+CEButton1Lock.Caption = "Travar valor de vida"
+CEButton1Lock.Cursor = "crHandPoint"
+CEButton1Lock.Left = 20
+CEButton1Lock.Top = 75
+CEButton1Lock.Width = 250
+
+local CELabel2 = createLabel(CETrainer)
+CELabel2.Caption = "\n"
+CELabel2.Left = 20
+CELabel2.Top = 105
+
+local CELabel3 = createLabel(CETrainer)
+CELabel3.Caption = "Deixar vida máxima em:"
+CELabel3.Left = 20
+CELabel3.Top = 135
+
+local CEEdit2 = createEdit(CETrainer)
+CEEdit2.TextHint = "ex: 999"
+CEEdit2.Text = player_max_life.Value
+CEEdit2.Left = 20
+CEEdit2.Top = 160
+CEEdit2.Width = 120
+
+local CEButton2 = createButton(CETrainer)
+CEButton2.Caption = "OK"
+CEButton2.Cursor = "crHandPoint"
+CEButton2.Left = 160
+CEButton2.Top = 157
+
+local CEButton2Lock = createButton(CETrainer)
+CEButton2Lock.Caption = "Travar valor de vida máxima"
+CEButton2Lock.Cursor = "crHandPoint"
+CEButton2Lock.Left = 20
+CEButton2Lock.Top = 190
+CEButton2Lock.Width = 250
+
+
+function CEButton1Click(sender)
+    player_life.Value = CEEdit1.Text
+end
+
+function CEButton2Click(sender)
+    player_max_life.Value = CEEdit2.Text
+end
+
+CEButton1.OnClick = CEButton1Click
+CEButton2.OnClick = CEButton2Click
+
+function CEButton1LockClick(sender)
+    player_life.Active = not player_life.Active
+    if player_life.Active then
+        CEButton1Lock.Caption = "Destravar valor de vida"
+    else
+        CEButton1Lock.Caption = "Travar valor de vida"
+    end
+end
+
+function CEButton2LockClick(sender)
+    player_max_life.Active = not player_max_life.Active
+    if player_max_life.Active then
+        CEButton2Lock.Caption = "Destravar valor de vida máxima"
+    else
+        CEButton2Lock.Caption = "Travar valor de vida máxima"
+    end
+end
+
+CEButton1Lock.OnClick = CEButton1LockClick
+CEButton2Lock.OnClick = CEButton2LockClick
+
+function trainerOnClose(sender)
+    closeCE()
+    return caFree
+end
+
+CETrainer.OnClose = trainerOnClose
+
+</LuaScript>
+</CheatTable>
